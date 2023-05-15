@@ -9,5 +9,5 @@ function findLargestNumber (num1, num2, num3){
         largestNum = num3;
     }
 
-    console.log(largestNum);
+    console.log(`The largest number is ${largestNum}.`);
 }
