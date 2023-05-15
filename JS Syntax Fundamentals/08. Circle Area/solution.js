@@ -1,5 +1,5 @@
 function areaCalculator (input){
-    let reuslt;
+    let result;
     let inputType = typeof(input);
 
     if (inputType === 'number') {
