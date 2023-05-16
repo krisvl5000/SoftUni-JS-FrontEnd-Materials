@@ -2,8 +2,8 @@ function oddAndEvenCalculator (arr){
     let evenSum = 0;
     let oddSum = 0;
 
-    for (let index = 0; index < array.length; index++) {
-        const element = array[index];
+    for (let index = 0; index < arr.length; index++) {
+        let element = arr[index];
         element = Number (element);
 
         if (element % 2 === 0){
