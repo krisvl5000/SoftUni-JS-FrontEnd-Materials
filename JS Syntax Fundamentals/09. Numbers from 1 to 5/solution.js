@@ -3,5 +3,3 @@ function numPrinter (){
         console.log(index);
     }
 }
-
-numPrinter();
