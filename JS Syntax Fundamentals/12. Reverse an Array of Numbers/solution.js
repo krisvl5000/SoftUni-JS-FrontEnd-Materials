@@ -1,10 +1,5 @@
 function arrReverser (n, arr){
-    let newArr;
-
-    for (let index = n; index < arr.length; index++) {
-        const element = n[index];
-        newArr.unshift(element);
-    }
-    
+    let newArr = arr.slice(0, n);
+    newArr = newArr.reverse();
     console.log(newArr.join(' '));
 }
