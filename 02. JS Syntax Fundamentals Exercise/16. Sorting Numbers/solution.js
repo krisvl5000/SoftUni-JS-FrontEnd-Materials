@@ -1,5 +1,5 @@
 function sortNumbers (arr){
-    arr = arr.sort();
+    arr.sort((a, b) => a - b);
     let length = arr.length;
 
     let newArr = new Array;
