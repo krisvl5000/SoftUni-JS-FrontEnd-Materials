@@ -37,15 +37,15 @@ function priceCalculator (peopleCount, type, dayOfWeek){
 
     let totalPrice = price * peopleCount;
 
-    if (peopleCount >= 30) {
+    if (type === 'Studetns' && peopleCount >= 30) {
         totalPrice -= totalPrice * 15 / 100;
     }
 
-    if (peopleCount >= 100) {
+    if (type === 'Business' && peopleCount >= 100) {
         totalPrice -= price * 10;
     }
 
-    if (peopleCount >= 10 && peopleCount <= 20) {
+    if (type === 'Regular' && peopleCount >= 10 && peopleCount <= 20) {
         totalPrice -= totalPrice * 0.1;
     }
 
