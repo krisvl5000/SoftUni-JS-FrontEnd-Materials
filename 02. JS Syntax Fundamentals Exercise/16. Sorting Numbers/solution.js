@@ -1,12 +1,16 @@
 function sortNumbers (arr){
     arr.sort();
+    let length = arr.length;
 
     let newArr = new Array;
 
-    for (let i = 0; i < arr.length; i++) {
-        let item = arr[i];
-
-        
+    for (let i = 0; i < length; i++) {
+        if (i % 2 === 0) {
+        newArr.push(arr.shift());
+        }
+        else{
+            newArr.push(arr.pop());
+        }
     }
 
     return newArr;
