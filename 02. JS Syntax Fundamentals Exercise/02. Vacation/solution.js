@@ -37,7 +37,7 @@ function priceCalculator (peopleCount, type, dayOfWeek){
 
     let totalPrice = price * peopleCount;
 
-    if (type === 'Studetns' && peopleCount >= 30) {
+    if (type === 'Students' && peopleCount >= 30) {
         totalPrice -= totalPrice * 15 / 100;
     }
 
@@ -52,4 +52,4 @@ function priceCalculator (peopleCount, type, dayOfWeek){
     console.log(`Total price: ${totalPrice.toFixed(2)}`);
 }
 
-priceCalculator(40, 'Regular', 'Saturday');
+priceCalculator(30, 'Students', 'Sunday');
