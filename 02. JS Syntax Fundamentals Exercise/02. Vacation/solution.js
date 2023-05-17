@@ -20,7 +20,7 @@ function priceCalculator (peopleCount, type, dayOfWeek){
             price = 15.60;
         }
         else{
-            price = 16;
+            price = 20;
         }
     }
     else {
