@@ -23,8 +23,11 @@ function speedometer (speed, area){
         if (speed - speedLimit <= 20) {
             status = 'speeding';
         }
-        else{
+        else if (speed - speedLimit <= 40){
             status = 'excessive speeding';
+        }
+        else{
+            status = 'reckless driving';
         }
         
         console.log(`The speed is ${speed - speedLimit} km/h faster than the allowed speed of ${speedLimit} - ${status}`);
