@@ -5,13 +5,8 @@ function sortNumbers (arr){
 
     for (let i = 0; i < arr.length; i++) {
         let item = arr[i];
+
         
-        if (i % 2 === 0) {
-           newArr.unshift(item); 
-        }
-        else{
-            newArr.push(item);
-        }
     }
 
     return newArr;
