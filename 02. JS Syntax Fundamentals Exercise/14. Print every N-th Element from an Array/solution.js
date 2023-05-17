@@ -15,13 +15,7 @@ function nPrinter (arr, n){
         }
     }
     
-    console.log(newArr);
+    return newArr;
 }
 
-nPrinter(['5', 
-'20', 
-'31', 
-'4', 
-'20'], 
-2
-);
+nPrinter(['5', '20', '31', '4', '20'], 2);
