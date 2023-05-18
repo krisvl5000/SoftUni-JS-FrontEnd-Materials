@@ -26,7 +26,7 @@ function simpleCalculator (num1, num2, operation){
         add: add,
         subtract: subtract,
         divide: divide,
-        multiply: multiply
+        multiply: multiply,
     }
 
     return operationMap[operation](num1, num2);
