@@ -1,11 +1,11 @@
 function repeatString (stringToRepeat, timesToRepeat){
-    let result;
+    let result = stringToRepeat;
 
-    for (let i = 0; i <= timesToRepeat; i++) {
+    for (let i = 0; i < timesToRepeat; i++) {
         result += stringToRepeat;
     }
 
-    return stringToRepeat;
+    return result;
 }
 
 repeatString('abc', 3);
