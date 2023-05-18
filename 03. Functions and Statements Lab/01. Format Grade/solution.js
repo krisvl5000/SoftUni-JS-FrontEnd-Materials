@@ -11,7 +11,7 @@ function formatGrade  (grade){
         eval = 'Good';
     }
     else if (grade >= 4.50 && grade < 5.50){
-        eval = 'Very Good';
+        eval = 'Very good';
     }
     else{
         eval = 'Excellent'
