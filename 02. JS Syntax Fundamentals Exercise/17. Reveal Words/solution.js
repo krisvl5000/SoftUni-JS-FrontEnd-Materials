@@ -16,6 +16,5 @@ function revealWords (words, wordsToReveal){
     console.log(newArr.join(' '));
 }
 
-revealWords('great',
-'softuni is ***** place for learning new programming languages'
-);
+revealWords('great', 
+'softuni is ***** place for learning new programming languages');
