@@ -1,17 +1,18 @@
-function isItaPalindrome (arr){
-    for (const num of arr) {
-    let numString = String(num);
-    let newArr = Array.from(numString);
-    let initialElement = newArr;
-    let initialElementReversed = initialElement.reverse();
-
-        if (newArr === initialElementReversed) {
-            console.log('true');
+function isNumPalindrome (arr){
+    for (let num of arr) {
+        // Convert the number to a string for comparison
+        let numStr = String(num);
+    
+        // Reverse the string
+        let reversedStr = numStr.split("").reverse().join("");
+    
+        // Check if the reversed string is equal to the original string
+        if (numStr === reversedStr) {
+          console.log("true");
+        } else {
+          console.log("false");
         }
-        else{
-            console.log(false);
-        }
-    }
+      }
 }
 
-isItaPalindrome([123,323,421,121]);
+isNumPalindrome([123,323,421,121]);
