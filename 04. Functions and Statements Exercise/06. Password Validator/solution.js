@@ -1,7 +1,7 @@
 function passwordValidator (password){
     const isValidLength = (pass) => pass.length >= 6 && pass.length <= 10;
     const hasOnlyLettersAndDigits = (pass) => /^[A-Za-z0-9]+&/g.test(pass);
-    const hasAtLeastTwoDigits = (pass) => [...pass.mathAll(/\d/g)].length >= 2;
+    const hasAtLeastTwoDigits = (pass) => [...pass.matchAll(/\d/g)].length >= 2;
 
     let isValid = true;
 
