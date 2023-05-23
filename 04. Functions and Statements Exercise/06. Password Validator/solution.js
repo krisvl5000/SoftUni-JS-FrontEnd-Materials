@@ -9,10 +9,10 @@ function passwordValidator (password){
         console.log('Password must be between 6 and 10 characters');
     }
     if (!hasOnlyLettersAndDigits(password)) {
-        
+        isValid = false;
     }
     if (!hasAtLeastTwoDigits(password)) {
-        
+        isValid = false;
     }
 }
 
