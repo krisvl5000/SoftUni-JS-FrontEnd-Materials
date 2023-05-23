@@ -1,9 +1,6 @@
 function printMatrix (num){
-    for (let i = 0; i < num; i++) {
-        for (let j = 0; j < num; j++) {
-            console.log(num);
-        }
-    }
+    
+    console.log(new Array(num).fill(new Array(num).fill(num)));
 }
 
 printMatrix(3);
