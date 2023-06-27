@@ -1,4 +1,4 @@
 function personInfo(firstName, lastName, age) {
-    let person = { name: firstName, secondName: lastName, ageParam: age};
+    let person = { firstName: firstName, lastName: lastName, age: age};
     return person;
 }
