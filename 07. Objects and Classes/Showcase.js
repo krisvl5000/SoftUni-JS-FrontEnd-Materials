@@ -10,3 +10,20 @@ console.log(person["My Grades"]);
 // We can also change the value of a property simply by redefining it:
 person.name = 'Gosho';
 console.log(person.name);
+
+// We can also define entire switch case structures within a singular function
+// using the following syntax:
+
+let count = 0;
+
+const commandParser = {
+    increment: (count) => ++count,
+    decrement: (count) => --count,
+    reset: () => 0,
+};
+
+count = commandParser.increment(count);
+console.log(count);
+
+count = commandParser.decrement(count);
+console.log(count);
