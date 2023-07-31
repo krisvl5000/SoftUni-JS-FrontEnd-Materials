@@ -8,11 +8,11 @@ function solve(input) {
         if (command === 'IN'){
             cars.push(number);
         } else {
-            cars.pop(number); // might need to use shift
+            cars.pop(number);
         }
     }
 
-    if (cars.count === 0){
+    if (cars.length === 0){
         console.log('Parking Lot is Empty');
     } else {
         for (const car of cars.sort((a, b) => a.substring(4, 6) - b.substring(4, 6))) {
