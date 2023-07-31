@@ -13,11 +13,15 @@ function solve(input){
         }    
     }
 
+    const wordsToPrint = [];
+
     for (const[key, value] of Object.entries(wordsCount)) {
         if (value % 2 === 1) {
-            console.log(key.toLowerCase());
+            wordsToPrint.push(key);
         }
     }
+
+    console.log(wordsToPrint.join(' '));
 }
 
 solve('Java C# Php PHP Java PhP 3 C# 3 1 5 C#');
