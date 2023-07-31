@@ -16,8 +16,8 @@ function solve(input){
 
     const sortedWordsCount = Object.fromEntries
     (Object.entries(wordsCount).sort((a, b) => b[1] - a[1]));
-    
-    for (const[key, value] of Object.entries(wordsCount)) {
+
+    for (const[key, value] of Object.entries(sortedWordsCount)) {
         console.log(`${key} - ${value}`);
     }
 }
