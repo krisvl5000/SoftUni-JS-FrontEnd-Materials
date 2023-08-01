@@ -1,8 +1,14 @@
 function addItem() {
-    const text = document.querySelector('#newItemText').value;
-    const li = document.createElement('li');
-    li.textContent = text;
-    document.querySelector('#items').appendChild(li);
+    let newElement = document.getElementById('newItemText').value;
+    let list = document.getElementById('items');
+
+    if (newElement.length === 0) {
+        return;
+    }
+
+    let listItem = document.createElement('li');
+    listItem.textContent = newElement;
 
 
+    list.appendChild(listItem);
 }
