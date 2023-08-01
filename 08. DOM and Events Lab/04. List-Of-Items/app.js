@@ -1,3 +1,6 @@
 function addItem() {
-    console.log('TODO:...');
+    const text = document.querySelector('#newItemText').value;
+    const li = document.createElement('li');
+    li.textContent = text;
+    document.querySelector('#items').appendChild(li);
 }
