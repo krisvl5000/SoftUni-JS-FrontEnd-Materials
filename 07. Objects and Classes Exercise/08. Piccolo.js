@@ -1,23 +1,28 @@
-function solve(input) {
+function solve(arr) {
+    const parkingLot = new Set();
+    const parkedCars = new Set();
 
-    const cars = [];
+    for (const entry of arr) {
+        const [direction, carNumber] = entry.split(', ').map(item => item.trim());
 
-    for (const kvp of input) {
-        const [command, number] = kvp.split(', ');
-
-        if (command === 'IN'){
-            cars.push(number);
-        } else {
-            cars.pop(number);
+        if (direction === 'IN') {
+            if (!parkedCars.has(carNumber)) {
+                parkingLot.add(carNumber);
+                parkedCars.add(carNumber);
+            }
+        } else if (direction === 'OUT') {
+            if (parkedCars.has(carNumber)) {
+                parkingLot.delete(carNumber);
+                parkedCars.delete(carNumber);
+            }
         }
     }
 
-    if (cars.length === 0){
+    if (parkingLot.size === 0) {
         console.log('Parking Lot is Empty');
     } else {
-        for (const car of cars.sort((a, b) => a.substring(4, 6) - b.substring(4, 6))) {
-            console.log(car);
-        }
+        const sortedCarNumbers = Array.from(parkingLot).sort((a, b) => a.localeCompare(b));
+        console.log(sortedCarNumbers.join('\n'));
     }
 }
 
