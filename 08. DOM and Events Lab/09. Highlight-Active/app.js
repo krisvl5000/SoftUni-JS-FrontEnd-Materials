@@ -5,7 +5,7 @@ function focused() {
         input.addEventListener('focus', (e) =>{
             e.target.parentElement.className = 'focused';
         });
-        debugger;
+
         input.addEventListener('blur', (e) =>{
             e.target.parentElement.className = '';
         });
